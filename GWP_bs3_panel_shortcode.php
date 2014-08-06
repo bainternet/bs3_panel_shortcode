@@ -54,14 +54,14 @@ class GWP_bs3_panel_shortcode{
 		//start panel markup
 		$output = '<div class="panel panel-'.$type.'">';
 
-		//check if pannel has a header
+		//check if panel has a header
 		if ('no' != $header)
 			$output .= '<div class="panel-heading">'.$header.'</div>';
 
 		//add panel body content and allow shortcode in it
 		$output .= '<div class="panel-body">'.trim(do_shortcode( $content )).'</div>';
 
-		//check if pannel has a footer
+		//check if panel has a footer
 		if ('no' != $footer)
 			$output .= '<div class="panel-footer">'.$footer.'</div>';
 
